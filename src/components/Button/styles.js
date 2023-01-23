@@ -1,0 +1,19 @@
+import styled from "styled-components";
+
+export const Container = styled.button`
+    height: 56px;
+    width: 100%;
+
+    background: ${({ theme, secondary }) => secondary ? theme.COLORS.BACKGROUND_900 : theme.COLORS.PINK};
+    color: ${({ theme, secondary }) => secondary ? theme.COLORS.PINK : theme.COLORS.GRAY_500};
+
+    border-radius: 10px;
+    border: none;
+
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+`
